@@ -1,0 +1,105 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --page-margin: 1px auto -8px;
+    --page-border: 9px solid transparent;
+}
+
+.toolbar {
+    position: relative;
+    left:0;
+    right:0;
+    z-index: 9999;
+    cursor:default;
+    height:32px;
+}
+
+.pdfViewer .page {
+    direction: ltr;
+    margin:var(--page-margin);
+    position:relative;
+    overflow: visible;
+    background-clip: content-box;
+    border:var(--page-border);
+    border-image: url(../images/shadow.png) 9 9 repeat;
+    background-color: white;
+}
+
+/* -------------------page  table of contents-------------------- */
+.page .table_of_contents {
+    background-color: #e1f4fd;
+    color: #408eda;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.page .table_of_contents h1 {
+    line-height: 1.5em;
+}
+
+.page .table_of_contents a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+}
+
+.page .table_of_contents h2 {
+    font-size: 15px;
+    padding-left: 20px;
+    font-weight: 500;
+}
+
+.page .table_of_contents h3 {
+    font-size: 15px;
+    color: red;
+    text-decoration:underline;
+    font-weight: normal;
+    display: inline-block;
+    margin:0px 20px 0px 0px;
+    padding-left: 20px;
+}
+
+.page .table_of_contents h1 a:hover,.page .table_of_contents h2 a:hover,.page .table_of_contents h3:hover {
+    text-decoration: underline;
+}
+/* -------------------------------------------------------------- */
+
+/* scroll-top effect */
+.scroll-top:hover {
+    opacity: 0.4
+}
+/* ----------------- */
+
+/* -------------left column--------------- */
+.leftcolumn {
+    width: 400px;
+    height: 580px;
+    margin-left: 20px;
+    float:left;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.rightcolumn {
+    width: 400px;
+    height: 580px;
+    margin-right: 20px;
+    float:right;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.leftcolumn h1 {
+    font-size: 20px;
+    overflow: hidden;
+    color: white;                                  
+    font-size: 30px;                                     
+    text-transform: uppercase;
+    background-color: #0b77b6; 
+    margin-bottom: 20px;
+}

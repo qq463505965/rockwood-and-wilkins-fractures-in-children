@@ -1,0 +1,323 @@
+:root {
+    --page-margin: 1px auto -8px;
+    --page-border: 9px solid transparent;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: none;
+    -webkit-touch-callout: none;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%
+}
+
+body {
+    height: 100%;
+    background-color: #fff;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    color: #34495e;
+    font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* content format */
+.content {
+    padding-top: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: left .25s ease;
+    width: auto;
+    height: auto;
+}
+/* content format */
+
+/* content table format----------------------------------*/
+.content>article table {
+    border-spacing: 0;
+    font-size: large;
+}
+
+.content>article table td {
+    border: 1px solid #01a9cb;
+    border-style: none none solid;
+}
+
+.content>article table td.last-line {
+    border-bottom:2px solid; 
+    border-color:#01a9cb;
+}
+
+.content>article table th {
+    border: 1px solid #0d7fc5;
+    border-style: none none solid;
+    text-align: left;
+    background-color: #e4f3fb;
+    color: #0d7fc5;
+}
+
+.content>article table:not(.take-home-message) caption {
+    color: white;
+    background-color: #0b77b6;
+    font-weight: bold;
+    text-align: left;
+}
+
+.content>article table.take-home-message caption {
+    font-family: 'Microsoft Himalaya';
+    color: white;
+    background-color: #01a9cb;
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content>article table.take-home-message caption li {
+    list-style-type: none;
+    background: url("../images/icon_tick.svg") no-repeat 0px 9px;
+    text-indent: 1em;
+    background-size: 1.2rem 1.2rem;
+    vertical-align: middle;
+    padding-top: 5px;
+}
+
+.content>article table.take-home-message td{
+    background-color: #e1f4f9;
+    font-family: 'Microsoft Himalaya';
+    font-size: 25px;
+    border-bottom: 2px solid #01a9cb;
+}
+
+.content>article table.take-home-message td li {
+    list-style-position: outside;
+    list-style-type: none;
+    background: url("../images/icon_square.svg") no-repeat 0px 5px;
+    background-size: 0.8rem 0.8rem;
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
+.content>article table sup {
+    font-size: 10;
+}
+/* content table format--------------------------------- */
+
+/* content table annotated reference format -------------*/
+.content>article table.annotation caption {
+    text-indent: 1em;
+    vertical-align: middle;
+    background-color:#00b2a5;
+    color:white;
+    padding: 5px 0px 5px;
+}
+
+.content>article table.annotation th {
+    text-indent: 1em;
+    vertical-align: middle;
+    background-color:white;
+    color:#00b2a5;
+    border-bottom: 1px solid #00b2a5;
+}
+
+.content>article table.annotation td {
+    padding-left: 1em;
+    background-color:white;
+    color:black;
+    font-size: 15px;
+    border-bottom: 1px solid #00b2a5;
+}
+
+/* content headings' format----------------------------- */
+.content>article {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.content>article h1 {                                          
+    color: white;                                  
+    font-size: 30px;                                     
+    text-transform: uppercase;
+    background-color: #0b77b6;                        
+}                                                      
+.content>article h2 {                                          
+    color: #0d7fc5;                                  
+    text-transform: uppercase;                         
+}                                                      
+.content>article h3 {
+    font-size: 20px;                                        
+    color:red;                                       
+    border-bottom: solid 2px red;                       
+}
+
+.content>article h4 {
+    color:#f5824a;
+    margin: 5px 0px;
+    font-size: 20px;
+}
+
+.content>article h5 {
+    color: #00b3df;
+    font-size: 20px;
+    font-weight: 500;
+    margin:10px 0px 10px;
+}
+
+.content>article img {
+    position:relative;
+    left:50%;
+    transform:translate(-50%);
+}
+
+.content>article img.document-svg {
+    left:20px;
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.content>article p {
+    font-size: large;
+    margin:10px 0px;
+}
+
+.content>article p a {
+    cursor: pointer;
+}
+
+/* superscript format */
+.content>article sup {
+    color: grey;
+    /* the code below is to prevent sup element to change line-height */
+    font-size:75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top:-0.5em;
+}
+
+.content>article sup.reference {
+    color: #0d7fc5;
+    cursor: pointer;
+}
+
+.content>article span.figure_num {
+    color: #0b77b6;
+}
+
+.content>article span.bold {
+    font-weight: bold;
+}
+
+.content>article span.umimportant {
+    color:lightgray;
+}
+                                                       
+.content>article .image_title {                                
+    color: black;                                    
+}                                                      
+                                                       
+.content>article .underline_1 {                                
+    text-decoration: underline;
+}                                                      
+                                                       
+.content>article .underline_2 {                                
+    text-decoration-line: double;
+    text-decoration-style: wavy;
+}
+
+.content>article .emphasize_1 {
+    background-color: #fcd0b3;
+}
+
+.content>article .emphasize_2 {
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+/* content headings' format----------------------------- */
+
+/* content catalog format ------------------------------ */
+.content .table_of_contents {
+    background-color: #e1f4fd;
+    color: #408eda;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.content .table_of_contents h1 {
+    line-height: 1.5em;
+}
+
+.content .table_of_contents a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+}
+
+.content .table_of_contents h2 {
+    font-size: 15px;
+    padding-left: 20px;
+    font-weight: 500;
+}
+
+.content .table_of_contents h3 {
+    font-size: 15px;
+    color: red;
+    text-decoration:underline;
+    font-weight: normal;
+    display: inline-block;
+    margin:0px 20px 0px 0px;
+    padding-left: 20px;
+}
+
+.content .table_of_contents h1 a:hover,.content .table_of_contents h2 a:hover,.content .table_of_contents h3:hover {
+    text-decoration: underline;
+}
+
+/* content catalog format ------------------------------ */
+
+/* scroll-top effect */
+.scroll-top:hover {
+    opacity: 0.4
+}
+/* ----------------- */
+
+/* --------column---------- */
+.area {
+    direction: ltr;
+    margin:var(--page-margin);
+    position:absolute;
+    overflow: visible;
+    background-clip: content-box;
+    border:var(--page-border);
+    border-image: url(../images/shadow.png) 9 9 repeat;
+    background-color: white;
+    left:2px;
+    padding-left: 9px;
+    right:2px;
+    padding-right: 9px;
+}
+.leftcolumn {
+    float:left;
+    position: relative;
+    width:50%;
+    padding-right: 10px;
+}
+.rightcolumn {
+    float:right;
+    position: relative;
+    width:50%;
+    padding-left: 10px;
+    right:2px;
+
+}
+/* ------------------------ */
